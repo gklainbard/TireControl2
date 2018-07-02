@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavadero Firestore</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main-form">
+        <h3>Lavadero Firestore</h3>
+        <p>Welcome to Lavadero Firestore</p>
+    </div>
+    <div>
+        <textarea placeholder="Ingrese su nombre" id="name" ></textarea>
+        <textarea placeholder="Numero de Legajo" id="legajo"></textarea>
+        <textarea placeholder="Imagen" id="imagen"></textarea>
+        <textarea placeholder="Puntaje" id="score"></textarea>
+        <button id="submit_btn" onclick="sendAudit()">Ingresar</button>
+    </div>
+
+    <button onclick="Datos">Crear Tabla</button>
+
+
+
+
+
+
+    <!-- HighCharts example-->
+
+
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto">
+
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD3dGkRZBD1pZ_DbvFcDsqqFLKXKxWBR1M",
+            authDomain: "inspeccioneslavadero.firebaseapp.com",
+            databaseURL: "https://inspeccioneslavadero.firebaseio.com",
+            projectId: "inspeccioneslavadero",
+            storageBucket: "inspeccioneslavadero.appspot.com",
+            messagingSenderId: "700709692915"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+</body>
+</html>
